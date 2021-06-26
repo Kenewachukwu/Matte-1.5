@@ -1,0 +1,275 @@
+
+@media screen and (max-width: 768px ) {
+    .container{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 626px ) {
+    .container{
+        width: 67vw;
+    }
+    nav{
+        display: none;
+    }
+    
+    .logobar a #logo{
+        width: 40px;
+        height: 40px;
+    }
+
+    h1{
+        font-size: 8vw;
+    }
+
+    h2{
+        margin-top: 10px;
+        font-size: 3vw;
+        width: 68vw;
+        color: white;
+    }
+
+    .h2-box h3{
+        margin-top: 10vh;
+    }
+
+
+    .our-works{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .cards{
+        height: 450px;
+        
+    }
+
+    .cards img{
+        width: auto;
+        height: 100%;
+    }
+
+    .cards:nth-child(4){
+        margin-top: 0;
+    }
+
+    .cards:nth-child(2){
+        margin-top: 0;
+    }
+
+    .part3{
+        background-position: top;
+    }
+
+    .circle{
+        width: 70px;
+        height: 70px;
+        border: 4px solid white;
+    }
+
+    .circle-first{
+        top: -2px;
+        width: 70px;
+        height: 70px;
+        border: 4px solid white;
+
+    }
+
+    .arrow{
+        width: 40px;
+    }
+
+    .showroom p{
+        font-size: 14px;
+    }
+
+    .wisdom .wisdom-quote h5{
+        right: 30px;
+    }
+
+    .wisdom .wisdom-quote h6{
+      font-size: 14px;
+        
+    }
+
+    .wisdom .wisdom-quote .box{
+      font-size: 14px;
+        
+    }
+
+    .contact-us button{
+        width: 32vw;
+        height: 20vh;
+        
+    }
+
+    .team .team-box{
+        width: 100%;
+        align-items: center;
+        flex-direction:column;
+    }
+
+    .kene-speech{
+        flex-direction: column;
+    }
+
+    .kene::before{
+        
+        position: absolute;
+        width: 100px;
+        right: 0px;
+        top: 70px;
+        }
+        .kene{
+           
+            
+            width: 300px;
+            height: 450px;
+           
+            filter: grayscale(1);
+            transition: 1000ms;
+        }
+
+        .kene-speech p{
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+            width: 100%;
+            height: auto;
+            font-size: 14px;
+        }
+
+    
+}
+
+@media screen and (max-width: 420px) {
+
+    .logobar{
+        position: relative;
+    }
+
+    h1{
+        margin-top: 10vh;
+        font-size: 16vw;
+        line-height: 1em;
+    }
+    
+    h2{
+        font-family: 'body';
+        font-weight: 100;
+        margin-top: 10vh;
+        font-size: 4vw;
+    }
+
+    .container{
+        width: 88vw;
+    }
+
+    .audio-box #mute-icon{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 30px;
+    }
+
+    
+
+    .h2-box h3{
+        font-size: 16vw;
+    }
+
+    .part3{
+        margin-top: 20vh;
+    }
+
+    .part3 h4{
+        
+        font-size: 13vw;
+    }
+
+    .part3 p{
+        font-size: 14px;
+    }
+
+    .showroom{
+        margin-top: 0;
+    }
+
+    .circle{
+        bottom: 40px;
+    }
+
+    .showroom video{
+        margin-top: 0;
+        margin-bottom: 10vh;
+    }
+
+    .showroom  h3{
+        
+        font-size: 12vw;
+        
+    }
+
+    .showroom-plus h4{
+        font-size: 12vw;
+    }
+
+    .showroom-plus .fuzz{
+        margin-top: 10vh;
+    }
+
+    .wisdom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wisdom .wisdom-quote h5{
+        width: 370vw;
+        font-size: 16vw;
+        top: -10vh;
+        animation: move 18s infinite alternate linear;
+    }
+
+    .wisdom .wisdom-quote .group{
+        margin-top: 10vh;
+        margin-bottom: 0;
+    }
+    .wisdom .wisdom-quote h6{
+        
+        margin-bottom: 20vh;
+    }
+
+    .contact-us button{
+        width: 100%;
+    }
+
+    .team h4{
+        font-size: 14vw;
+    }
+
+    @keyframes move {
+
+        from{
+            transform: translateX(0);
+        }
+
+        to{
+            transform: translateX(370vw);
+        }
+
+
+        
+    }
+
+}
+
+
+
+
+
+
+/* @media screen and (max-width: 785px){
+    nav a:not(#logo){
+        display: none;
+    }
+} */

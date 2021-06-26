@@ -1,0 +1,648 @@
+@font-face { font-family: euclid; src: url('./fonts/NeutralFace.otf'); }
+@font-face { font-family: euclid-bold; src: url('./fonts/NeutralFace-Bold.otf'); }
+@font-face { font-family: network; src: url('./fonts/NetworkFreeVersion.ttf'); }
+@font-face { font-family: body; src: url('./fonts/EuclidCircularA-Light.ttf'); }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'mak'; */
+    cursor: url('./svg/cursor5.png') 14 12, auto;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.section{
+    position: relative;
+    width: 100vw;
+
+    background-image: url('./images/aurora1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
+
+.logobar{
+    position: fixed;
+    left: 5vw;
+    width: 90vw;
+    z-index: 999999;
+
+}
+
+.logobar a #logo{
+
+    margin-top: 8vh;
+    width: 4em;
+    height: 4em;
+    background-image: url('./images/matte-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    
+
+}
+
+nav{
+
+    display: flex;
+    justify-content: flex-end;
+    width: 97vw;
+
+
+
+}
+
+
+nav .links{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+nav .links a{
+    font-size: 12px ;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.356);
+    text-align: right;
+    text-decoration: none;
+    font-family: 'euclid';
+
+}
+
+.header-landing{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.centralizer{
+    display: flex;
+    justify-content: center;
+}
+
+.matte-button{
+    margin-top: 30px;
+    margin-bottom: 10vh;
+    font-family: 'euclid';
+    color: rgb(190, 190, 190);
+    width: 180px;
+    height: 50px;
+
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.103);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+h1 {
+    margin-top: 30vh;
+    color: white;
+    font-size: 7vw;
+    padding-right: 20%;
+
+    font-family: 'euclid', sans-serif;
+    line-height: 0.95em;
+}
+
+h2 {
+    margin-top: 30px;
+    font-family: 'euclid', sans-serif;
+    width: 40vw;
+    font-size: 2vw;
+    color: rgb(184, 184, 184);
+
+}
+
+
+
+
+
+.audio-box{
+    position: relative;
+}
+
+.audio-box #mute-icon{
+    position: fixed;
+    width: 30px;
+    height: 30px ;
+    bottom: 20px;
+    right: 2vw;
+    background: transparent;
+    border: none;
+}
+
+/*Section2*/
+
+.section2{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+    
+    background-size: cover;
+
+}
+
+.container{
+    width: 76vw;
+    }
+
+.section2 .services-group{
+ margin-top: 5vh;
+ display: flex;
+ justify-content: space-between;
+ border-bottom: 1px solid white;
+ padding-bottom: 10px;
+}
+
+.section2 .services{
+    color: white;
+    font-family: 'euclid';
+    font-size: 12px;
+}
+
+
+
+.h2-box h3{
+    margin-top: 30vh;
+    font-family: 'euclid';
+    color: white;
+    font-size: 9vw;
+}
+
+.our-works{
+    margin-top: 10vw;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 800px 900px 800px;
+    grid-gap: 50px 50px;
+
+}
+
+.cards{
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards img{
+    height: 100%;
+    transition: 1000ms;
+ 
+}
+.cards img:hover{
+    transform: scale(1.5);
+    opacity: 10%;
+}
+
+.cards:nth-child(4){
+    margin-top: 30vh;
+}
+
+
+
+
+.cards:nth-child(2){
+    margin-top: 20vh;
+}
+
+/*Section 3*/
+.part3{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin-top: 30vh;
+
+    background-image: url('./images/aurora2.jpg');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.part3 h4{
+    color: white;
+    font-family: 'euclid';
+    font-size: 7vw;
+}
+
+.part3 p{
+    margin-top: 10vh;
+    font-family: 'body';
+    color: white;
+    font-size: 18px;
+}
+
+.h2-box{
+    position: relative;
+}
+
+ .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    border: 10px solid white;
+    border-radius: 50%;
+    transform: rotate(-135deg);
+    overflow: hidden;
+    opacity: 0.2;
+    transition: 1s;
+}
+ .circle-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 9.5vw;
+    width: 200px;
+    height: 200px;
+    border: 10px solid white;
+    border-radius: 50%;
+    transform: rotate(135deg);
+    overflow: hidden;
+    opacity: 0.2;
+    transition: 1s;
+
+}
+
+
+
+ .circle:hover{
+    opacity: 1;
+    color: #10FF4C;
+}
+
+ .arrow{
+    width: 100px;
+    animation: arrow 2s ease-in-out alternate infinite;
+}
+
+/*Arrow Animation*/
+@keyframes arrow{
+    from{
+        transform: translate(0, 0);
+    }
+
+    to{
+        transform: translate(900px, 250px);
+    }
+}
+
+.showroom{
+    margin-top: 20vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20vh;
+}
+
+.cont-g{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.showroom video{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+
+ 
+    width: 100%;
+    transition: 1s ease-out;
+    z-index: 0;
+}
+
+.showroom video:hover{
+    transform: scale(1.1);
+}
+
+.showroom  h3{
+    width: 20vw;
+    color: white;
+    font-family: 'euclid';
+    font-size: 7vw;
+    z-index: 1;
+}
+
+.showroom-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.showroom p{
+    width: 100%;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(202, 202, 202);
+    font-family: 'body', sans-serif;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.showroom-plus{
+    width: 100%;
+}
+
+.showroom-plus h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'euclid';
+    font-size: 7vw;
+}
+
+.showroom-plus .fuzz{
+    width: 100%;
+    overflow: hidden;
+}
+
+.fuzz img{
+    width: 100%
+}
+
+.showroom-plus .showrooms{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.showroom-plus .showrooms a{
+    padding: 10px 30px;
+    border-bottom: 1px white solid;
+
+    font-family: 'euclid';
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.showrooms a:hover{
+    color: wheat;
+    transform: scale(1.1);
+}
+
+.wisdom {
+    margin-top: 10vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+
+}
+
+.wisdom .wisdom-quote{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-left: 20px;
+}
+
+
+.wisdom img{
+    width: 100%;
+}
+
+.wisdom .wisdom-quote h6{
+    font-family: 'body';
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 50vh;
+}
+
+.wisdom .wisdom-quote h5{
+    position: absolute;
+    font-family: 'euclid';
+    color: wheat;
+    font-size: 5vw;
+    width: 60vw;
+    top: 50vh;
+    right: 0;
+
+    
+}
+.wisdom .wisdom-quote .box{
+ margin-top: 10px;
+ margin-right: 10px;
+  height: 1px;
+  background-color: #fff;
+  width: 10vw;
+
+}
+.wisdom .wisdom-quote .group{
+  display: flex;
+
+}
+
+
+
+
+.contact-us{
+    margin-top: 40vh;
+    position: relative;
+}
+
+.contact-us form{
+    display: flex;
+    flex-direction: column;
+    border: none;
+} 
+
+.contact-us input{
+    margin-bottom: 10vh;
+    height: 10vh;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    font-family: 'body';
+    font-weight: 100;
+    font-size: 16px;
+    color: white;
+    outline: none;
+
+}
+
+.contact-us button{
+    width: 20vw;
+    height: 10vh;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: 1s;
+    font-family: 'euclid';
+}
+.contact-us button>a{
+    color: white;
+    text-decoration: none;
+    font-family: 'euclid';
+}
+
+.contact-us button:hover{
+    background-color: #fff;
+    color: black;
+}
+.contact-us button:hover>a{
+    color: black;
+}
+
+.contact-us h4{
+    font-family: 'euclid';
+    font-size: 8vw;
+    color: wheat;
+    margin-bottom: 10vh;
+}
+
+.contact-us img{
+    position: absolute;
+    width: 40vh;
+    height: 40vh;
+    top: -40vh;
+    right: 0;
+    transform-origin: center;
+    animation: spin 14s infinite forwards linear;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+.team {
+    margin-top: 20vh;
+    width: 100%;
+}
+
+.team h4{
+    font-family: 'euclid';
+    font-size: 8vw;
+    color: wheat;
+}
+
+.team .team-box{
+    display: flex;
+    width: 60%;
+}
+
+.team .team-box .members {
+
+    padding: 10px;
+    border: wheat 1px solid;
+}
+.team .team-box .members img {
+    width: 100%
+    
+}
+.team .team-box .members p {
+    font-family: 'euclid';
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+
+.kene-speech{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kene{
+    position: relative;
+    
+    width: 400px;
+    height: 550px;
+    background-image: url('./images/kene1.jpg');
+    background-size: cover;
+    filter: grayscale(1);
+    transition: 1000ms;
+}
+.kene:hover{
+
+    filter: grayscale(0);
+}
+
+.kene::before{
+    content: 'Hi, I am Kene';
+    position: absolute;
+    width: 100px;
+    right: -30px;
+    top: 70px;
+    color: #10FF4C;
+    font-family: 'network';
+    font-size:24px ;
+    
+}
+
+.kene-speech p{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    color: rgb(202, 202, 202);
+    width: 40vw;
+    font-family: 'body', sans-serif;
+    font-size: 24px;
+}
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    width: 100%;
+
+    height: 8vh;
+    background-color: rgb(43, 43, 43);
+}
+
+.social .instagram{
+    width: 20%;
+    height: 5vh;
+    background-image: url('./images/instagram.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
